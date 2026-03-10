@@ -1,0 +1,2 @@
+# This file ensures the migrations directory is tracked by Git
+# Individual migration files are ignored by .gitignore

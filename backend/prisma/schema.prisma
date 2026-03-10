@@ -1,0 +1,142 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String          @id @default(uuid())
+  email          String          @unique
+  name           String
+  password       String          // Hashed password
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  tasks          Task[]
+  projects       Project[]
+  projectMembers ProjectMember[]
+  activityLogs   ActivityLog[]
+  taskComments   TaskComment[]
+
+  @@map("users")
+}
+
+model Project {
+  id           String          @id @default(uuid())
+  name         String
+  description  String?
+  color        String?         @default("#0ea5e9")
+  userId       String
+  user         User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tasks        Task[]
+  members      ProjectMember[]
+  activityLogs ActivityLog[]
+  createdAt    DateTime        @default(now())
+  updatedAt    DateTime        @updatedAt
+
+  @@map("projects")
+}
+
+model Task {
+  id          String           @id @default(uuid())
+  title       String
+  description String?
+  status      TaskStatus       @default(TODO)
+  priority    Priority         @default(MEDIUM)
+  dueDate     DateTime?
+  userId      String
+  user        User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  projectId   String?
+  project     Project?         @relation(fields: [projectId], references: [id], onDelete: SetNull)
+  attachments TaskAttachment[]
+  comments    TaskComment[]
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+
+  @@map("tasks")
+}
+
+enum TaskStatus {
+  TODO
+  IN_PROGRESS
+  DONE
+}
+
+enum Priority {
+  LOW
+  MEDIUM
+  HIGH
+  URGENT
+}
+
+model ProjectMember {
+  id        String      @id @default(uuid())
+  projectId String
+  project   Project     @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  userId    String
+  user      User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  role      ProjectRole @default(MEMBER)
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+
+  @@unique([projectId, userId])
+  @@map("project_members")
+}
+
+enum ProjectRole {
+  OWNER
+  ADMIN
+  MEMBER
+}
+
+model ActivityLog {
+  id         String   @id @default(uuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  projectId  String?
+  project    Project? @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  action     String // "created", "updated", "deleted", "invited", "removed", etc.
+  entityType String // "task", "project", "member"
+  entityId   String?
+  details    Json? // Additional data (old values, new values, etc.)
+  createdAt  DateTime @default(now())
+
+  @@index([projectId])
+  @@index([userId])
+  @@map("activity_logs")
+}
+
+model TaskAttachment {
+  id           String   @id @default(uuid())
+  taskId       String
+  task         Task     @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  fileName     String
+  fileUrl      String
+  fileType     String // MIME type
+  fileSize     Int // Size in bytes
+  cloudinaryId String? // Public ID from Cloudinary
+  uploadedBy   String
+  createdAt    DateTime @default(now())
+
+  @@index([taskId])
+  @@map("task_attachments")
+}
+
+model TaskComment {
+  id        String   @id @default(uuid())
+  taskId    String
+  task      Task     @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([taskId])
+  @@map("task_comments")
+}

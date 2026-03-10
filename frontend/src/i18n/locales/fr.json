@@ -1,0 +1,293 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "tasks": "Tâches",
+    "projects": "Projets",
+    "login": "Connexion",
+    "logout": "Déconnexion",
+    "getStarted": "Commencer"
+  },
+  "home": {
+    "badge": "Plateforme Moderne de Gestion de Tâches",
+    "title1": "Transformez Votre",
+    "title2": "Parcours de Productivité",
+    "subtitle": "Découvrez le mélange parfait entre simplicité et puissance. Gérez vos tâches, collaborez avec vos équipes et atteignez vos objectifs avec élégance.",
+    "startFree": "Commencer Gratuitement",
+    "signIn": "Se Connecter",
+    "goToTasks": "Accéder aux Tâches",
+    "viewProjects": "Voir les Projets",
+    "trust": {
+      "noCredit": "Aucune carte bancaire requise",
+      "freePlan": "Plan gratuit à vie",
+      "setup": "Configuration en 2 minutes"
+    },
+    "stats": {
+      "users": "Utilisateurs Actifs",
+      "tasks": "Tâches Terminées",
+      "uptime": "Disponibilité",
+      "rating": "Note des Utilisateurs"
+    },
+    "features": {
+      "title": "Tout Ce Dont Vous Avez Besoin Pour Exceller",
+      "subtitle": "Des fonctionnalités puissantes méticuleusement conçues pour les équipes et les individus qui exigent l'excellence",
+      "task": {
+        "title": "Gestion Intelligente des Tâches",
+        "description": "Créez, organisez et priorisez vos tâches avec une interface intuitive glisser-déposer. Définissez des échéances, ajoutez des descriptions et suivez les progrès sans effort."
+      },
+      "team": {
+        "title": "Collaboration d'Équipe",
+        "description": "Invitez des membres de l'équipe, attribuez des rôles et travaillez ensemble de manière fluide. Les mises à jour en temps réel maintiennent tout le monde synchronisé et productif."
+      },
+      "project": {
+        "title": "Organisation de Projets",
+        "description": "Regroupez les tâches connexes dans de beaux projets avec des couleurs personnalisées, des descriptions et un suivi détaillé de la progression pour une meilleure visibilité."
+      },
+      "analytics": {
+        "title": "Analyses Avancées",
+        "description": "Surveillez votre progression avec des statistiques complètes, des graphiques visuels et des journaux d'activité détaillés. Prenez des décisions basées sur les données en toute confiance."
+      },
+      "files": {
+        "title": "Pièces Jointes",
+        "description": "Joignez des documents, des images et des fichiers directement à vos tâches. Gardez toutes les informations pertinentes organisées dans un seul emplacement central."
+      },
+      "workflow": {
+        "title": "Workflows Flexibles",
+        "description": "Personnalisez les statuts de tâches, les niveaux de priorité et les workflows pour correspondre à votre processus unique. Adaptez la plateforme à vos besoins, et non l'inverse."
+      }
+    },
+    "howItWorks": {
+      "title": "Comment Ça Marche",
+      "subtitle": "Commencez en quelques minutes avec notre processus simple en trois étapes",
+      "step1": {
+        "title": "Créer un Compte",
+        "description": "Inscrivez-vous en quelques secondes avec juste votre email. Pas de formulaires complexes, pas de processus de configuration longs."
+      },
+      "step2": {
+        "title": "Ajoutez Vos Tâches",
+        "description": "Commencez à ajouter des tâches et des projets immédiatement. Organisez tout exactement comme vous le souhaitez."
+      },
+      "step3": {
+        "title": "Accomplissez Vos Objectifs",
+        "description": "Regardez votre productivité monter en flèche alors que vous accomplissez plus avec moins d'effort et de stress."
+      }
+    },
+    "benefits": {
+      "title": "Pourquoi Choisir Taskora ?",
+      "subtitle": "Rejoignez des milliers de personnes qui ont transformé leur flux de travail",
+      "fast": {
+        "title": "Ultra Rapide",
+        "description": "Construit avec une technologie moderne pour des temps de réponse instantanés. Pas de latence, pas d'attente - juste de la productivité pure."
+      },
+      "secure": {
+        "title": "Sécurisé et Privé",
+        "description": "Vos données sont cryptées et protégées. Nous prenons la sécurité au sérieux afin que vous puissiez vous concentrer sur votre travail en toute tranquillité d'esprit."
+      },
+      "design": {
+        "title": "Design Intuitif",
+        "description": "Interface propre et moderne qui est un plaisir à utiliser. Aucune formation requise - il suffit de se lancer et de commencer à être productif."
+      },
+      "available": {
+        "title": "Toujours Disponible",
+        "description": "Accédez à vos tâches de n'importe où, à tout moment. Plateforme basée sur le cloud avec une garantie de disponibilité de 99,9%."
+      }
+    },
+    "faq": {
+      "title": "Questions Fréquemment Posées",
+      "subtitle": "Tout ce que vous devez savoir sur Taskora",
+      "q1": {
+        "question": "Taskora est-il vraiment gratuit ?",
+        "answer": "Oui ! Taskora offre un plan gratuit à vie généreux qui inclut toutes les fonctionnalités principales. Vous pouvez créer des tâches et des projets illimités, collaborer avec votre équipe et profiter de l'expérience complète sans limite de temps ni carte bancaire requise."
+      },
+      "q2": {
+        "question": "Puis-je utiliser Taskora pour la collaboration en équipe ?",
+        "answer": "Absolument ! Taskora est conçu pour les individus et les équipes. Vous pouvez inviter des membres de l'équipe à vos projets, attribuer des tâches, définir différents niveaux d'autorisation et suivre les progrès de chacun en temps réel. La communication et la collaboration sont au cœur de ce que nous faisons."
+      },
+      "q3": {
+        "question": "Dans quelle mesure mes données sont-elles sécurisées ?",
+        "answer": "La sécurité est notre priorité absolue. Toutes les données sont cryptées en transit et au repos. Nous utilisons des protocoles de sécurité standard de l'industrie, effectuons des audits de sécurité réguliers et nous conformons aux réglementations internationales sur la protection des données. Vos informations sont en sécurité avec nous."
+      },
+      "q4": {
+        "question": "Puis-je accéder à Taskora sur des appareils mobiles ?",
+        "answer": "Oui ! Taskora est entièrement responsive et fonctionne magnifiquement sur tous les appareils - ordinateur de bureau, tablette et mobile. Accédez à vos tâches en déplacement, mettez à jour la progression de n'importe où et restez productif que vous soyez à votre bureau ou en déplacement."
+      },
+      "q5": {
+        "question": "Ai-je besoin de connaissances techniques pour utiliser Taskora ?",
+        "answer": "Pas du tout ! Taskora est conçu pour être incroyablement intuitif et convivial. Si vous pouvez utiliser le courrier électronique, vous pouvez utiliser Taskora. Notre interface propre et nos flux de travail logiques permettent à quiconque de commencer en quelques minutes, sans formation requise."
+      }
+    },
+    "cta": {
+      "title": "Prêt à Transformer Votre Productivité ?",
+      "subtitle": "Rejoignez des milliers de professionnels et d'équipes qui ont déjà élevé leur flux de travail avec Taskora",
+      "startAccount": "Créer Votre Compte Gratuit",
+      "signInstead": "Se Connecter Plutôt",
+      "footer": "Aucune carte bancaire requise • Plan gratuit à vie • Configuration en 2 minutes"
+    },
+    "footer": {
+      "description": "La plateforme moderne de gestion de tâches conçue pour vous aider à accomplir plus avec moins d'effort. Simple, puissant et magnifique.",
+      "product": "Produit",
+      "features": "Fonctionnalités",
+      "roadmap": "Feuille de Route",
+      "integrations": "Intégrations",
+      "changelog": "Journal des Modifications",
+      "company": "Entreprise",
+      "about": "À Propos",
+      "blog": "Blog",
+      "careers": "Carrières",
+      "contact": "Contact",
+      "copyright": "© 2025 Taskora. Tous droits réservés.",
+      "privacy": "Politique de Confidentialité",
+      "terms": "Conditions d'Utilisation",
+      "cookies": "Politique de Cookies"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Bon Retour",
+      "subtitle": "Connectez-vous pour continuer sur Taskora",
+      "email": "Adresse Email",
+      "emailPlaceholder": "vous@exemple.com",
+      "password": "Mot de passe",
+      "passwordPlaceholder": "••••••••",
+      "signIn": "Se Connecter",
+      "signingIn": "Connexion en cours...",
+      "noAccount": "Vous n'avez pas de compte ?",
+      "createAccount": "Créez-en un maintenant"
+    },
+    "register": {
+      "title": "Créez Votre Compte",
+      "subtitle": "Commencez à gérer vos tâches efficacement",
+      "name": "Nom Complet",
+      "namePlaceholder": "Jean Dupont",
+      "email": "Adresse Email",
+      "emailPlaceholder": "vous@exemple.com",
+      "password": "Mot de passe",
+      "passwordPlaceholder": "••••••••",
+      "confirmPassword": "Confirmer le Mot de passe",
+      "confirmPasswordPlaceholder": "••••••••",
+      "passwordHint": "Doit contenir au moins 6 caractères",
+      "passwordMismatch": "Les mots de passe ne correspondent pas",
+      "passwordTooShort": "Le mot de passe doit contenir au moins 6 caractères",
+      "createAccount": "Créer un Compte",
+      "creatingAccount": "Création du compte...",
+      "haveAccount": "Vous avez déjà un compte ?",
+      "signIn": "Connectez-vous plutôt"
+    }
+  },
+  "tasks": {
+    "title": "Tâches",
+    "subtitle": "Gérez et suivez vos tâches",
+    "newTask": "Nouvelle Tâche",
+    "dueDate": "Échéance",
+    "filters": {
+      "status": "Statut",
+      "allStatuses": "Tous les Statuts",
+      "priority": "Priorité",
+      "allPriorities": "Toutes les Priorités",
+      "project": "Projet",
+      "allProjects": "Tous les Projets",
+      "clear": "Effacer tous les filtres"
+    },
+    "status": {
+      "todo": "À Faire",
+      "inProgress": "En Cours",
+      "in_progress": "En Cours",
+      "done": "Terminé"
+    },
+    "priority": {
+      "low": "Basse",
+      "medium": "Moyenne",
+      "high": "Haute",
+      "urgent": "Urgente"
+    },
+    "empty": {
+      "noTasks": "Aucune tâche pour le moment",
+      "noMatch": "Aucune tâche ne correspond à vos filtres",
+      "createFirst": "Commencez en créant votre première tâche.",
+      "adjustFilters": "Essayez d'ajuster vos filtres pour voir plus de tâches."
+    },
+    "create": {
+      "title": "Créer une Nouvelle Tâche",
+      "firstTask": "Créez Votre Première Tâche",
+      "create": "Créer la Tâche"
+    },
+    "edit": {
+      "title": "Modifier la Tâche",
+      "update": "Mettre à Jour la Tâche"
+    },
+    "form": {
+      "title": "Titre",
+      "titlePlaceholder": "Titre de la tâche",
+      "description": "Description",
+      "descriptionPlaceholder": "Description de la tâche (optionnel)",
+      "status": "Statut",
+      "priority": "Priorité",
+      "dueDate": "Date d'Échéance",
+      "project": "Projet",
+      "noProject": "Aucun Projet",
+      "attachments": "Pièces Jointes"    },
+    "comments": {
+      "title": "Discussion",
+      "addComment": "Ajouter un commentaire",
+      "placeholder": "Écrire un commentaire...",
+      "empty": "Aucun commentaire pour le moment. Lancez la discussion !",
+      "posting": "Publication...",
+      "post": "Publier le commentaire",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "edited": "(modifié)",
+      "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce commentaire ?",
+      "you": "Vous"    }
+  },
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Organisez vos tâches en projets significatifs",
+    "newProject": "Nouveau Projet",
+    "loading": "Chargement des projets...",
+    "tasksCount": "tâches",
+    "empty": {
+      "noProjects": "Aucun projet pour le moment",
+      "createFirst": "Commencez en créant votre premier projet pour organiser vos tâches."
+    },
+    "create": {
+      "title": "Créer un Nouveau Projet",
+      "firstProject": "Créez Votre Premier Projet",
+      "create": "Créer"
+    },
+    "edit": {
+      "title": "Modifier le Projet",
+      "update": "Mettre à Jour"
+    },
+    "form": {
+      "name": "Nom du Projet",
+      "namePlaceholder": "Mon Super Projet",
+      "description": "Description",
+      "descriptionPlaceholder": "De quoi parle ce projet ?",
+      "color": "Couleur du Projet",
+      "colorHint": "Choisissez une couleur pour identifier votre projet"
+    }
+  },
+  "common": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "view": "Voir",
+    "close": "Fermer",
+    "loading": "Chargement...",
+    "saving": "Enregistrement...",
+    "error": "Une erreur s'est produite",
+    "success": "Succès",
+    "confirm": "Confirmer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "actions": "Actions",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "dueDate": "Date d'Échéance",
+    "noDueDate": "Pas de date d'échéance"
+  }
+}

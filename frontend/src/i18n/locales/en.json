@@ -1,0 +1,295 @@
+{
+  "nav": {
+    "home": "Home",
+    "tasks": "Tasks",
+    "projects": "Projects",
+    "login": "Login",
+    "logout": "Logout",
+    "getStarted": "Get Started"
+  },
+  "home": {
+    "badge": "Modern Task Management Platform",
+    "title1": "Transform Your",
+    "title2": "Productivity Journey",
+    "subtitle": "Experience the perfect blend of simplicity and power. Manage tasks, collaborate with teams, and achieve your goals with elegance.",
+    "startFree": "Start Free Today",
+    "signIn": "Sign In",
+    "goToTasks": "Go to Tasks",
+    "viewProjects": "View Projects",
+    "trust": {
+      "noCredit": "No credit card required",
+      "freePlan": "Free forever plan",
+      "setup": "Setup in 2 minutes"
+    },
+    "stats": {
+      "users": "Active Users",
+      "tasks": "Tasks Completed",
+      "uptime": "Uptime",
+      "rating": "User Rating"
+    },
+    "features": {
+      "title": "Everything You Need to Excel",
+      "subtitle": "Powerful features meticulously crafted for teams and individuals who demand excellence",
+      "task": {
+        "title": "Smart Task Management",
+        "description": "Create, organize, and prioritize your tasks with an intuitive drag-and-drop interface. Set deadlines, add descriptions, and track progress effortlessly."
+      },
+      "team": {
+        "title": "Team Collaboration",
+        "description": "Invite team members, assign roles, and work together seamlessly. Real-time updates keep everyone in sync and productive."
+      },
+      "project": {
+        "title": "Project Organization",
+        "description": "Group related tasks into beautiful projects with custom colors, descriptions, and detailed progress tracking for better visibility."
+      },
+      "analytics": {
+        "title": "Advanced Analytics",
+        "description": "Monitor your progress with comprehensive stats, visual charts, and detailed activity logs. Make data-driven decisions with confidence."
+      },
+      "files": {
+        "title": "File Attachments",
+        "description": "Attach documents, images, and files directly to your tasks. Keep all relevant information organized in one central location."
+      },
+      "workflow": {
+        "title": "Flexible Workflows",
+        "description": "Customize task statuses, priority levels, and workflows to match your unique process. Adapt the platform to your needs, not the other way around."
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Get started in minutes with our simple three-step process",
+      "step1": {
+        "title": "Create Account",
+        "description": "Sign up in seconds with just your email. No complex forms, no lengthy setup processes."
+      },
+      "step2": {
+        "title": "Add Your Tasks",
+        "description": "Start adding tasks and projects immediately. Organize everything exactly how you want it."
+      },
+      "step3": {
+        "title": "Get Things Done",
+        "description": "Watch your productivity soar as you accomplish more with less effort and stress."
+      }
+    },
+    "benefits": {
+      "title": "Why Choose Taskora?",
+      "subtitle": "Join thousands who have transformed their workflow",
+      "fast": {
+        "title": "Lightning Fast",
+        "description": "Built with modern technology for instant response times. No lag, no waiting - just pure productivity."
+      },
+      "secure": {
+        "title": "Secure & Private",
+        "description": "Your data is encrypted and protected. We take security seriously so you can focus on your work with peace of mind."
+      },
+      "design": {
+        "title": "Intuitive Design",
+        "description": "Clean, modern interface that's a joy to use. No training required - just jump in and start being productive."
+      },
+      "available": {
+        "title": "Always Available",
+        "description": "Access your tasks from anywhere, anytime. Cloud-based platform with 99.9% uptime guarantee."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about Taskora",
+      "q1": {
+        "question": "Is Taskora really free?",
+        "answer": "Yes! Taskora offers a generous free forever plan that includes all core features. You can create unlimited tasks and projects, collaborate with your team, and enjoy the full experience without any time limits or credit card requirements."
+      },
+      "q2": {
+        "question": "Can I use Taskora for team collaboration?",
+        "answer": "Absolutely! Taskora is designed for both individuals and teams. You can invite team members to your projects, assign tasks, set different permission levels, and track everyone's progress in real-time. Communication and collaboration are at the heart of what we do."
+      },
+      "q3": {
+        "question": "How secure is my data?",
+        "answer": "Security is our top priority. All data is encrypted both in transit and at rest. We use industry-standard security protocols, perform regular security audits, and comply with international data protection regulations. Your information is safe with us."
+      },
+      "q4": {
+        "question": "Can I access Taskora on mobile devices?",
+        "answer": "Yes! Taskora is fully responsive and works beautifully on all devices - desktop, tablet, and mobile. Access your tasks on the go, update progress from anywhere, and stay productive whether you're at your desk or on the move."
+      },
+      "q5": {
+        "question": "Do I need technical knowledge to use Taskora?",
+        "answer": "Not at all! Taskora is designed to be incredibly intuitive and user-friendly. If you can use email, you can use Taskora. Our clean interface and logical workflows make it easy for anyone to get started within minutes, no training required."
+      }
+    },
+    "cta": {
+      "title": "Ready to Transform Your Productivity?",
+      "subtitle": "Join thousands of professionals and teams who have already elevated their workflow with Taskora",
+      "startAccount": "Start Your Free Account",
+      "signInstead": "Sign In Instead",
+      "footer": "No credit card required • Free forever plan • 2-minute setup"
+    },
+    "footer": {
+      "description": "The modern task management platform designed to help you achieve more with less effort. Simple, powerful, and beautiful.",
+      "product": "Product",
+      "features": "Features",
+      "roadmap": "Roadmap",
+      "integrations": "Integrations",
+      "changelog": "Changelog",
+      "company": "Company",
+      "about": "About Us",
+      "blog": "Blog",
+      "careers": "Careers",
+      "contact": "Contact",
+      "copyright": "© 2025 Taskora. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Sign in to continue to Taskora",
+      "email": "Email Address",
+      "emailPlaceholder": "you@example.com",
+      "password": "Password",
+      "passwordPlaceholder": "••••••••",
+      "signIn": "Sign In",
+      "signingIn": "Signing in...",
+      "noAccount": "Don't have an account?",
+      "createAccount": "Create one now"
+    },
+    "register": {
+      "title": "Create Your Account",
+      "subtitle": "Start managing your tasks efficiently",
+      "name": "Full Name",
+      "namePlaceholder": "John Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "you@example.com",
+      "password": "Password",
+      "passwordPlaceholder": "••••••••",
+      "confirmPassword": "Confirm Password",
+      "confirmPasswordPlaceholder": "••••••••",
+      "passwordHint": "Must be at least 6 characters",
+      "passwordMismatch": "Passwords do not match",
+      "passwordTooShort": "Password must be at least 6 characters",
+      "createAccount": "Create Account",
+      "creatingAccount": "Creating account...",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in instead"
+    }
+  },
+  "tasks": {
+    "title": "Tasks",
+    "subtitle": "Manage and track your tasks",
+    "newTask": "New Task",
+    "dueDate": "Due",
+    "filters": {
+      "status": "Status",
+      "allStatuses": "All Statuses",
+      "priority": "Priority",
+      "allPriorities": "All Priorities",
+      "project": "Project",
+      "allProjects": "All Projects",
+      "clear": "Clear all filters"
+    },
+    "status": {
+      "todo": "To Do",
+      "inProgress": "In Progress",
+      "in_progress": "In Progress",
+      "done": "Done"
+    },
+    "priority": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "urgent": "Urgent"
+    },
+    "empty": {
+      "noTasks": "No tasks yet",
+      "noMatch": "No tasks match your filters",
+      "createFirst": "Get started by creating your first task.",
+      "adjustFilters": "Try adjusting your filters to see more tasks."
+    },
+    "create": {
+      "title": "Create New Task",
+      "firstTask": "Create Your First Task",
+      "create": "Create Task"
+    },
+    "edit": {
+      "title": "Edit Task",
+      "update": "Update Task"
+    },
+    "form": {
+      "title": "Title",
+      "titlePlaceholder": "Task title",
+      "description": "Description",
+      "descriptionPlaceholder": "Task description (optional)",
+      "status": "Status",
+      "priority": "Priority",
+      "dueDate": "Due Date",
+      "project": "Project",
+      "noProject": "No Project",
+      "attachments": "Attachments"
+    },
+    "comments": {
+      "title": "Discussion",
+      "addComment": "Add a comment",
+      "placeholder": "Write a comment...",
+      "empty": "No comments yet. Start the discussion!",
+      "posting": "Posting...",
+      "post": "Post Comment",
+      "edit": "Edit",
+      "delete": "Delete",
+      "edited": "(edited)",
+      "deleteConfirm": "Are you sure you want to delete this comment?",
+      "you": "You"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Organize your tasks into meaningful projects",
+    "newProject": "New Project",
+    "loading": "Loading projects...",
+    "tasksCount": "tasks",
+    "empty": {
+      "noProjects": "No projects yet",
+      "createFirst": "Get started by creating your first project to organize your tasks."
+    },
+    "create": {
+      "title": "Create New Project",
+      "firstProject": "Create Your First Project",
+      "create": "Create"
+    },
+    "edit": {
+      "title": "Edit Project",
+      "update": "Update"
+    },
+    "form": {
+      "name": "Project Name",
+      "namePlaceholder": "My Awesome Project",
+      "description": "Description",
+      "descriptionPlaceholder": "What is this project about?",
+      "color": "Project Color",
+      "colorHint": "Choose a color to identify your project"
+    }
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "close": "Close",
+    "loading": "Loading...",
+    "saving": "Saving...",
+    "error": "An error occurred",
+    "success": "Success",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "actions": "Actions",
+    "createdAt": "Created",
+    "updatedAt": "Updated",
+    "dueDate": "Due Date",
+    "noDueDate": "No due date"
+  }
+}
