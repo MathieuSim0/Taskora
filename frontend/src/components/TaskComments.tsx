@@ -38,7 +38,7 @@ const TaskComments: React.FC<TaskCommentsProps> = ({ taskId }) => {
   const fetchComments = async () => {
     try {
       console.log('Fetching comments for task:', taskId);
-      const response = await axios.get(`http://localhost:3000/api/tasks/${taskId}/comments`);
+      const response = await axios.get(`/api/tasks/${taskId}/comments`);
       console.log('Comments fetched:', response.data);
       setComments(response.data);
     } catch (error: any) {
@@ -60,7 +60,7 @@ const TaskComments: React.FC<TaskCommentsProps> = ({ taskId }) => {
     try {
       console.log('Posting comment:', newComment);
       const response = await axios.post(
-        `http://localhost:3000/api/tasks/${taskId}/comments`,
+        `/api/tasks/${taskId}/comments`,
         { content: newComment }
       );
       console.log('Comment response:', response.data);
@@ -82,7 +82,7 @@ const TaskComments: React.FC<TaskCommentsProps> = ({ taskId }) => {
 
     try {
       const response = await axios.put(
-        `http://localhost:3000/api/tasks/${taskId}/comments/${commentId}`,
+        `/api/tasks/${taskId}/comments/${commentId}`,
         { content: editContent }
       );
       setComments(comments.map(c => c.id === commentId ? response.data : c));
@@ -100,7 +100,7 @@ const TaskComments: React.FC<TaskCommentsProps> = ({ taskId }) => {
     }
 
     try {
-      await axios.delete(`http://localhost:3000/api/tasks/${taskId}/comments/${commentId}`);
+      await axios.delete(`/api/tasks/${taskId}/comments/${commentId}`);
       setComments(comments.filter(c => c.id !== commentId));
       toast.success(t('common.success'));
     } catch (error: any) {

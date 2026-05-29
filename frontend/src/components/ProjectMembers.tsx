@@ -43,7 +43,7 @@ const ProjectMembers: React.FC<ProjectMembersProps> = ({
     try {
       setLoading(true);
       const response = await axios.get(
-        `http://localhost:3000/api/projects/${projectId}/members`,
+        `/api/projects/${projectId}/members`,
       );
       setMembers(response.data);
     } catch (error: any) {
@@ -61,7 +61,7 @@ const ProjectMembers: React.FC<ProjectMembersProps> = ({
     const loadingToast = toast.loading('Removing member...');
     try {
       await axios.delete(
-        `http://localhost:3000/api/projects/${projectId}/members/${memberId}`,
+        `/api/projects/${projectId}/members/${memberId}`,
       );
       setMembers(members.filter(m => m.id !== memberId));
       toast.dismiss(loadingToast);
@@ -80,7 +80,7 @@ const ProjectMembers: React.FC<ProjectMembersProps> = ({
     const loadingToast = toast.loading('Updating role...');
     try {
       const response = await axios.patch(
-        `http://localhost:3000/api/projects/${projectId}/members/${memberId}`,
+        `/api/projects/${projectId}/members/${memberId}`,
         { role: newRole },
       );
       setMembers(members.map(m => (m.id === memberId ? response.data : m)));
@@ -277,7 +277,7 @@ const InviteMemberModal: React.FC<{
 
     try {
       await axios.post(
-        `http://localhost:3000/api/projects/${projectId}/members/invite`,
+        `/api/projects/${projectId}/members/invite`,
         { email: email.trim(), role },
       );
       toast.dismiss(loadingToast);

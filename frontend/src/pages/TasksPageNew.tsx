@@ -45,7 +45,7 @@ const TasksPage: React.FC = () => {
   const fetchTasks = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:3000/api/tasks');
+      const response = await axios.get('/api/tasks');
       setTasks(response.data);
     } catch (error: any) {
       toast.error(error.response?.data?.message || 'Failed to load tasks');
@@ -56,7 +56,7 @@ const TasksPage: React.FC = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/projects');
+      const response = await axios.get('/api/projects');
       setProjects(response.data);
     } catch (error: any) {
       console.error('Failed to load projects', error);
@@ -68,7 +68,7 @@ const TasksPage: React.FC = () => {
 
     const loadingToast = toast.loading('Deleting task...');
     try {
-      await axios.delete(`http://localhost:3000/api/tasks/${id}`);
+      await axios.delete(`/api/tasks/${id}`);
       setTasks(tasks.filter(t => t.id !== id));
       toast.dismiss(loadingToast);
       toast.success('Task deleted successfully');
@@ -351,11 +351,11 @@ const TaskFormModal: React.FC<{
       };
 
       if (task) {
-        await axios.put(`http://localhost:3000/api/tasks/${task.id}`, data);
+        await axios.put(`/api/tasks/${task.id}`, data);
         toast.dismiss(loadingToast);
         toast.success('Task updated successfully!');
       } else {
-        await axios.post('http://localhost:3000/api/tasks', data);
+        await axios.post('/api/tasks', data);
         toast.dismiss(loadingToast);
         toast.success('Task created successfully!');
       }

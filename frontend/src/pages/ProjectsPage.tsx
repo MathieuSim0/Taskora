@@ -29,7 +29,7 @@ const ProjectsPage: React.FC = () => {
   const fetchProjects = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:3000/api/projects');
+      const response = await axios.get('/api/projects');
       setProjects(response.data);
       setError('');
     } catch (err: any) {
@@ -45,7 +45,7 @@ const ProjectsPage: React.FC = () => {
     }
 
     try {
-      await axios.delete(`http://localhost:3000/api/projects/${id}`);
+      await axios.delete(`/api/projects/${id}`);
       setProjects(projects.filter(p => p.id !== id));
     } catch (err: any) {
       alert(err.response?.data?.message || 'Failed to delete project');
@@ -212,9 +212,9 @@ const ProjectFormModal: React.FC<{
 
     try {
       if (project) {
-        await axios.put(`http://localhost:3000/api/projects/${project.id}`, formData);
+        await axios.put(`/api/projects/${project.id}`, formData);
       } else {
-        await axios.post('http://localhost:3000/api/projects', formData);
+        await axios.post('/api/projects', formData);
       }
       onSuccess();
     } catch (err: any) {

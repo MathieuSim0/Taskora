@@ -35,7 +35,7 @@ const ActivityLogList: React.FC<ActivityLogListProps> = ({ projectId }) => {
     try {
       setLoading(true);
       const response = await axios.get(
-        `http://localhost:3000/api/projects/${projectId}/logs?limit=50`
+        `/api/projects/${projectId}/logs?limit=50`
       );
       setLogs(response.data);
     } catch (error: any) {
@@ -45,7 +45,7 @@ const ActivityLogList: React.FC<ActivityLogListProps> = ({ projectId }) => {
     }
   };
 
-  const getActionIcon = (action: string, entityType: string) => {
+  const getActionIcon = (action: string, _entityType: string) => {
     if (action === 'created') {
       return (
         <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center">

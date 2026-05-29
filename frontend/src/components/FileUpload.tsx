@@ -112,7 +112,7 @@ const FileUpload: React.FC<FileUploadProps> = ({ taskId, onUploadSuccess }) => {
     setUploadProgress(0);
 
     try {
-      await axios.post(`http://localhost:3000/api/tasks/${taskId}/upload`, formData, {
+      await axios.post(`/api/tasks/${taskId}/upload`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

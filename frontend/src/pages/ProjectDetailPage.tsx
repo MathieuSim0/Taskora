@@ -86,7 +86,7 @@ const ProjectDetailPage: React.FC = () => {
     if (!user) return;
     
     try {
-      const response = await axios.get(`http://localhost:3000/api/projects/${id}/members`);
+      const response = await axios.get(`/api/projects/${id}/members`);
       const members = response.data;
       const currentMember = members.find((m: any) => m.userId === user.id);
       
@@ -101,7 +101,7 @@ const ProjectDetailPage: React.FC = () => {
   const fetchProject = async () => {
     try {
       setLoading(true);
-      const response = await axios.get(`http://localhost:3000/api/projects/${id}`);
+      const response = await axios.get(`/api/projects/${id}`);
       setProject(response.data);
       setError('');
     } catch (err: any) {
@@ -113,7 +113,7 @@ const ProjectDetailPage: React.FC = () => {
 
   const fetchProjectStats = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/api/projects/${id}/stats`);
+      const response = await axios.get(`/api/projects/${id}/stats`);
       setStats(response.data);
     } catch (err: any) {
       console.error('Failed to fetch project stats:', err);
@@ -126,7 +126,7 @@ const ProjectDetailPage: React.FC = () => {
     }
 
     try {
-      await axios.delete(`http://localhost:3000/api/projects/${id}`);
+      await axios.delete(`/api/projects/${id}`);
       navigate('/projects');
     } catch (err: any) {
       alert(err.response?.data?.message || 'Failed to delete project');
@@ -434,7 +434,7 @@ const ProjectDetailPage: React.FC = () => {
                     cx="50%"
                     cy="50%"
                     labelLine={false}
-                    label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(0)}%`}
+                    label={({ name, percent }) => `${name}: ${((percent ?? 0) * 100).toFixed(0)}%`}
                     outerRadius={80}
                     fill="#8884d8"
                     dataKey="value"
@@ -639,7 +639,7 @@ const ProjectEditModal: React.FC<{
     setError('');
 
     try {
-      await axios.put(`http://localhost:3000/api/projects/${project.id}`, formData);
+      await axios.put(`/api/projects/${project.id}`, formData);
       onSuccess();
     } catch (err: any) {
       setError(err.response?.data?.message || 'Failed to update project');

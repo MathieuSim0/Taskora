@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npx prisma generate && npm run build",
+  "functions": {
+    "api/index.ts": {
+      "includeFiles": "node_modules/.prisma/client/**"
+    }
+  },
+  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/index" }]
+}

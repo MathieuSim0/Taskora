@@ -30,7 +30,7 @@ const AttachmentsList: React.FC<AttachmentsListProps> = ({ taskId, refreshTrigge
   const fetchAttachments = async () => {
     try {
       setLoading(true);
-      const response = await axios.get(`http://localhost:3000/api/tasks/${taskId}/attachments`);
+      const response = await axios.get(`/api/tasks/${taskId}/attachments`);
       setAttachments(response.data);
       console.log('Attachments loaded:', response.data); // Debug: voir les URLs
     } catch (err) {
@@ -46,7 +46,7 @@ const AttachmentsList: React.FC<AttachmentsListProps> = ({ taskId, refreshTrigge
     }
 
     try {
-      await axios.delete(`http://localhost:3000/api/tasks/${taskId}/attachments/${attachmentId}`);
+      await axios.delete(`/api/tasks/${taskId}/attachments/${attachmentId}`);
       toast.success('Attachment deleted successfully');
       fetchAttachments();
     } catch (err: any) {
